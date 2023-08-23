@@ -16,6 +16,7 @@ class MyServer(BaseHTTPRequestHandler):
     """
 
     def __get_html(self):
+        """Метод для чтения html файла"""
         file = codecs.open("index.html", 'r', "utf-8")
         return file.read()
 
